@@ -1165,7 +1165,7 @@
 /def -Fp111 -mglob -q -t'Matrix: *' re_matrix = /substitute %-1
 
 /def -Fp111000 -mglob -aCyellow -q -t'{Tutszt|Harkuhu|Graiop|Yrintri|Irkitis|\
-	Flaxtri} teilt Dir mit: *' re_status_demon = \
+	Flaxtri|Nurchak} teilt Dir mit: *' re_status_demon = \
 	/if ({*}=/"*[.)!]") \
 		/substitute %-4%; \
 	/else \
@@ -1658,8 +1658,8 @@
 
 ;;; CHAOTEN
 
-/def -p1 -q -agCblue -mglob -t'{Tutszt|Harkuhu|Graiop|Yrintri|Irkitis|Flaxtri} \
-	weicht dem Angriff aus.' re_chaos_daemon_ausw = \
+/def -p1 -q -agCblue -mglob -t'{Tutszt|Harkuhu|Graiop|Yrintri|Irkitis|\
+	Flaxtri|Nurchak} weicht dem Angriff aus.' re_chaos_daemon_ausw = \
 	/set RE_KARATE_ABWEHR $[substr({1},0,5)]%;\
 	/set RE_KARATE 2
 
